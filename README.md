@@ -22,7 +22,17 @@ alias tree='eza --tree --level=2 --icons --group-directories-first --ignore-glob
 
 ## Instalación
 
-Clona el repositorio y ejecuta el script:
+### Opción A — Rápida (sin clonar, vía curl)
+
+Descarga y ejecuta el script directamente desde GitHub:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/ardy-x/dotfiles/main/setup-tools.sh | bash
+```
+
+> El script se descarga y ejecuta en el directorio actual. Al finalizar recarga tu shell (ver abajo).
+
+### Opción B — Clonando el repositorio
 
 ```bash
 git clone git@github.com:ardy-x/dotfiles.git
