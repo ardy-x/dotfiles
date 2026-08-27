@@ -22,26 +22,13 @@ alias tree='eza --tree --level=2 --icons --group-directories-first --ignore-glob
 
 ## Instalación
 
-### Opción A — Rápida (sin clonar, vía curl)
-
-Descarga y ejecuta el script directamente desde GitHub:
+Descarga y ejecuta el script directamente desde GitHub (sin clonar el repositorio):
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/ardy-x/dotfiles/main/scripts/setup-tools.sh | bash
 ```
 
-> El script se descarga y ejecuta en el directorio actual. Al finalizar recarga tu shell (ver abajo).
-
-### Opción B — Clonando el repositorio
-
-```bash
-git clone git@github.com:ardy-x/dotfiles.git
-cd dotfiles/scripts
-chmod +x setup-tools.sh
-./setup-tools.sh
-```
-
-Luego recarga tu shell:
+> El script se descarga y ejecuta en el directorio actual. Al finalizar recarga tu shell:
 
 ```bash
 source ~/.bashrc   # o source ~/.zshrc en macOS
