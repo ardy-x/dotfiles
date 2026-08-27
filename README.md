@@ -4,7 +4,7 @@ Configuración y herramientas para terminal, con soporte para **Linux** (familia
 
 ## Qué instala
 
-El script `setup-tools.sh` instala y configura:
+El script `scripts/setup-tools.sh` instala y configura:
 
 - **[bat](https://github.com/sharkdp/bat)** — reemplazo de `cat` con resaltado de sintaxis.
 - **[ripgrep](https://github.com/BurntSushi/ripgrep)** — búsqueda de texto rápida.
@@ -27,7 +27,7 @@ alias tree='eza --tree --level=2 --icons --group-directories-first --ignore-glob
 Descarga y ejecuta el script directamente desde GitHub:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ardy-x/dotfiles/main/setup-tools.sh | bash
+curl -fsSL https://raw.githubusercontent.com/ardy-x/dotfiles/main/scripts/setup-tools.sh | bash
 ```
 
 > El script se descarga y ejecuta en el directorio actual. Al finalizar recarga tu shell (ver abajo).
@@ -36,7 +36,7 @@ curl -fsSL https://raw.githubusercontent.com/ardy-x/dotfiles/main/setup-tools.sh
 
 ```bash
 git clone git@github.com:ardy-x/dotfiles.git
-cd dotfiles
+cd dotfiles/scripts
 chmod +x setup-tools.sh
 ./setup-tools.sh
 ```
@@ -52,6 +52,14 @@ source ~/.bashrc   # o source ~/.zshrc en macOS
 - **macOS**: usa [Homebrew](https://brew.sh). Si no está instalado, el script lo instala automáticamente.
 - **RHEL / Fedora / CentOS / AlmaLinux / Rocky**: usa `dnf`. Si `eza` no está disponible en los repositorios, se descarga el binario oficial.
 - **Debian / Ubuntu**: usa `apt` y el repositorio oficial de `eza`. En estas distros `bat` se instala como `batcat`, pero el script crea el alias `bat` correspondiente.
+
+## Entorno de escritorio (workstation)
+
+El script `scripts/setup-workstation.sh` instala aplicaciones de escritorio (Zen Browser, OrbStack/Docker, VS Code, TablePlus, Bitwarden y LocalSend) mediante un menú interactivo:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/ardy-x/dotfiles/main/scripts/setup-workstation.sh | bash
+```
 
 ## Verificación
 
